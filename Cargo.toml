@@ -1,0 +1,21 @@
+[package]
+name = "parse_query_bench"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tl = "0.7.7"
+scraper = "0.14.0"
+kuchiki = "0.8.1"
+visdom = "0.5.9"
+html_editor = "0.5.2"
+lol_html = "0.3.1"
+
+[dev-dependencies]
+criterion = "0.4.0"
+
+[[bench]]
+name = "html"
+harness = false
